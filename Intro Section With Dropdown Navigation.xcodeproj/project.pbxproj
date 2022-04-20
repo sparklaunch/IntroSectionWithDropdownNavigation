@@ -13,6 +13,7 @@
 		90763AC2280FA8C400AB956E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AB0280FA8C300AB956E /* ContentView.swift */; };
 		90763AC3280FA8C400AB956E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90763AB1280FA8C400AB956E /* Assets.xcassets */; };
 		90763AC4280FA8C400AB956E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90763AB1280FA8C400AB956E /* Assets.xcassets */; };
+		90763AD2280FAB1700AB956E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD1280FAB1700AB956E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		90763AB6280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intro Section With Dropdown Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90763ABC280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intro Section With Dropdown Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90763ABE280FA8C400AB956E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		90763AD1280FAB1700AB956E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		90763ACE280FA8E600AB956E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				90763AD0280FAB0C00AB956E /* Header */,
 				90763AB0280FA8C300AB956E /* ContentView.swift */,
 			);
 			path = Views;
@@ -100,6 +103,14 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		90763AD0280FAB0C00AB956E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				90763AD1280FAB1700AB956E /* HeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90763AC1280FA8C400AB956E /* ContentView.swift in Sources */,
+				90763AD2280FAB1700AB956E /* HeaderView.swift in Sources */,
 				90763ABF280FA8C400AB956E /* IntroSectionWithDropdownNavigationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
