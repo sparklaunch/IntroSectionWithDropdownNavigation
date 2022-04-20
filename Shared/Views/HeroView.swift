@@ -11,7 +11,7 @@ struct HeroView: View {
     var body: some View {
         Image(decorative: "Hero")
             .resizable()
-            .scaledToFill()
+            .scaledToFit()
             .fixedSize(horizontal: false, vertical: true)
     }
 }

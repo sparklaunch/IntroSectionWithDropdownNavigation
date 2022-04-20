@@ -11,11 +11,14 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.white
-            VStack(spacing: .zero) {
-                HeaderView()
-                HeroView()
-                BodyView()
-                FooterView()
+                .edgesIgnoringSafeArea(.all)
+            ScrollView {
+                LazyVStack(spacing: .zero) {
+                    HeaderView()
+                    HeroView()
+                    BodyView()
+                    FooterView()
+                }
             }
         }
     }

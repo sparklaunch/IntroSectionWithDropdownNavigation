@@ -27,6 +27,7 @@ struct FooterView: View {
                 .frame(width: 83, height: 24)
         }
         .padding()
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 

@@ -35,6 +35,7 @@ struct BodyView: View {
             }
         }
         .padding(EdgeInsets(top: 36, leading: 16, bottom: 36, trailing: 16))
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
