@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BodyView: View {
     var body: some View {
-        VStack(spacing: 24) {
+        VStack(spacing: Constants.General.semiwidePadding) {
             Text("Make remote work")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -27,14 +27,14 @@ struct BodyView: View {
                     .font(.title3)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 16, leading: 24, bottom: 16, trailing: 24))
+                    .padding(EdgeInsets(top: Constants.General.regularPadding, leading: Constants.General.semiwidePadding, bottom: Constants.General.regularPadding, trailing: Constants.General.semiwidePadding))
                     .background(
-                        RoundedRectangle(cornerRadius: 15, style: .continuous)
+                        RoundedRectangle(cornerRadius: Constants.General.cornerRadius, style: .continuous)
                             .fill(Color("TitleColor"))
                     )
             }
         }
-        .padding(EdgeInsets(top: 36, leading: 16, bottom: 36, trailing: 16))
+        .padding(EdgeInsets(top: Constants.General.widePadding, leading: Constants.General.regularPadding, bottom: Constants.General.widePadding, trailing: Constants.General.regularPadding))
         .fixedSize(horizontal: false, vertical: true)
     }
 }
