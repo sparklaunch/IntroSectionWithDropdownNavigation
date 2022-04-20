@@ -19,8 +19,8 @@
 		90763AAF280FA8C300AB956E /* IntroSectionWithDropdownNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSectionWithDropdownNavigationApp.swift; sourceTree = "<group>"; };
 		90763AB0280FA8C300AB956E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90763AB1280FA8C400AB956E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90763AB6280FA8C400AB956E /* IntroSectionWithDropdownNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroSectionWithDropdownNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		90763ABC280FA8C400AB956E /* IntroSectionWithDropdownNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroSectionWithDropdownNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90763AB6280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intro Section With Dropdown Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90763ABC280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intro Section With Dropdown Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90763ABE280FA8C400AB956E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +54,9 @@
 		90763AAE280FA8C300AB956E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				90763AAF280FA8C300AB956E /* IntroSectionWithDropdownNavigationApp.swift */,
-				90763AB0280FA8C300AB956E /* ContentView.swift */,
-				90763AB1280FA8C400AB956E /* Assets.xcassets */,
+				90763ACF280FA8EC00AB956E /* Models */,
+				90763ACE280FA8E600AB956E /* Views */,
+				90763ACD280FA8DE00AB956E /* App */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		90763AB7280FA8C400AB956E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90763AB6280FA8C400AB956E /* IntroSectionWithDropdownNavigation.app */,
-				90763ABC280FA8C400AB956E /* IntroSectionWithDropdownNavigation.app */,
+				90763AB6280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */,
+				90763ABC280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +78,36 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		90763ACD280FA8DE00AB956E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90763AB1280FA8C400AB956E /* Assets.xcassets */,
+				90763AAF280FA8C300AB956E /* IntroSectionWithDropdownNavigationApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		90763ACE280FA8E600AB956E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90763AB0280FA8C300AB956E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90763ACF280FA8EC00AB956E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90763AB5280FA8C400AB956E /* IntroSectionWithDropdownNavigation (iOS) */ = {
+		90763AB5280FA8C400AB956E /* Intro Section With Dropdown Navigation (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90763AC7280FA8C400AB956E /* Build configuration list for PBXNativeTarget "IntroSectionWithDropdownNavigation (iOS)" */;
+			buildConfigurationList = 90763AC7280FA8C400AB956E /* Build configuration list for PBXNativeTarget "Intro Section With Dropdown Navigation (iOS)" */;
 			buildPhases = (
 				90763AB2280FA8C400AB956E /* Sources */,
 				90763AB3280FA8C400AB956E /* Frameworks */,
@@ -93,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = "IntroSectionWithDropdownNavigation (iOS)";
+			name = "Intro Section With Dropdown Navigation (iOS)";
 			productName = "IntroSectionWithDropdownNavigation (iOS)";
-			productReference = 90763AB6280FA8C400AB956E /* IntroSectionWithDropdownNavigation.app */;
+			productReference = 90763AB6280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		90763ABB280FA8C400AB956E /* IntroSectionWithDropdownNavigation (macOS) */ = {
+		90763ABB280FA8C400AB956E /* Intro Section With Dropdown Navigation (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90763ACA280FA8C400AB956E /* Build configuration list for PBXNativeTarget "IntroSectionWithDropdownNavigation (macOS)" */;
+			buildConfigurationList = 90763ACA280FA8C400AB956E /* Build configuration list for PBXNativeTarget "Intro Section With Dropdown Navigation (macOS)" */;
 			buildPhases = (
 				90763AB8280FA8C400AB956E /* Sources */,
 				90763AB9280FA8C400AB956E /* Frameworks */,
@@ -110,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "IntroSectionWithDropdownNavigation (macOS)";
+			name = "Intro Section With Dropdown Navigation (macOS)";
 			productName = "IntroSectionWithDropdownNavigation (macOS)";
-			productReference = 90763ABC280FA8C400AB956E /* IntroSectionWithDropdownNavigation.app */;
+			productReference = 90763ABC280FA8C400AB956E /* Intro Section With Dropdown Navigation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90763AAD280FA8C300AB956E /* Build configuration list for PBXProject "IntroSectionWithDropdownNavigation" */;
+			buildConfigurationList = 90763AAD280FA8C300AB956E /* Build configuration list for PBXProject "Intro Section With Dropdown Navigation" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +170,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90763AB5280FA8C400AB956E /* IntroSectionWithDropdownNavigation (iOS) */,
-				90763ABB280FA8C400AB956E /* IntroSectionWithDropdownNavigation (macOS) */,
+				90763AB5280FA8C400AB956E /* Intro Section With Dropdown Navigation (iOS) */,
+				90763ABB280FA8C400AB956E /* Intro Section With Dropdown Navigation (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -324,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.IntroSectionWithDropdownNavigation;
-				PRODUCT_NAME = IntroSectionWithDropdownNavigation;
+				PRODUCT_NAME = "Intro Section With Dropdown Navigation";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.IntroSectionWithDropdownNavigation;
-				PRODUCT_NAME = IntroSectionWithDropdownNavigation;
+				PRODUCT_NAME = "Intro Section With Dropdown Navigation";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -384,7 +412,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.IntroSectionWithDropdownNavigation;
-				PRODUCT_NAME = IntroSectionWithDropdownNavigation;
+				PRODUCT_NAME = "Intro Section With Dropdown Navigation";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +440,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.IntroSectionWithDropdownNavigation;
-				PRODUCT_NAME = IntroSectionWithDropdownNavigation;
+				PRODUCT_NAME = "Intro Section With Dropdown Navigation";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90763AAD280FA8C300AB956E /* Build configuration list for PBXProject "IntroSectionWithDropdownNavigation" */ = {
+		90763AAD280FA8C300AB956E /* Build configuration list for PBXProject "Intro Section With Dropdown Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90763AC5280FA8C400AB956E /* Debug */,
@@ -431,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90763AC7280FA8C400AB956E /* Build configuration list for PBXNativeTarget "IntroSectionWithDropdownNavigation (iOS)" */ = {
+		90763AC7280FA8C400AB956E /* Build configuration list for PBXNativeTarget "Intro Section With Dropdown Navigation (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90763AC8280FA8C400AB956E /* Debug */,
@@ -440,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90763ACA280FA8C400AB956E /* Build configuration list for PBXNativeTarget "IntroSectionWithDropdownNavigation (macOS)" */ = {
+		90763ACA280FA8C400AB956E /* Build configuration list for PBXNativeTarget "Intro Section With Dropdown Navigation (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90763ACB280FA8C400AB956E /* Debug */,
