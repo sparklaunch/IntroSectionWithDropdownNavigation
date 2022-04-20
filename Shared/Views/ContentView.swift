@@ -11,8 +11,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.white
-            VStack {
+            VStack(spacing: .zero) {
                 HeaderView()
+                HeroView()
             }
         }
     }
