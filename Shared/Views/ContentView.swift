@@ -14,6 +14,7 @@ struct ContentView: View {
             VStack(spacing: .zero) {
                 HeaderView()
                 HeroView()
+                BodyView()
             }
         }
     }
