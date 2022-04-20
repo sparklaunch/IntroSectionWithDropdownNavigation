@@ -16,6 +16,7 @@
 		90763AD2280FAB1700AB956E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD1280FAB1700AB956E /* HeaderView.swift */; };
 		90763AD4280FABE800AB956E /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD3280FABE800AB956E /* HeroView.swift */; };
 		90763AD6280FAC3700AB956E /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD5280FAC3700AB956E /* BodyView.swift */; };
+		90763AD8280FAD5F00AB956E /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD7280FAD5F00AB956E /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		90763AD1280FAB1700AB956E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		90763AD3280FABE800AB956E /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
 		90763AD5280FAC3700AB956E /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		90763AD7280FAD5F00AB956E /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				90763AB0280FA8C300AB956E /* ContentView.swift */,
 				90763AD3280FABE800AB956E /* HeroView.swift */,
 				90763AD5280FAC3700AB956E /* BodyView.swift */,
+				90763AD7280FAD5F00AB956E /* FooterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				90763AC1280FA8C400AB956E /* ContentView.swift in Sources */,
 				90763AD2280FAB1700AB956E /* HeaderView.swift in Sources */,
 				90763AD6280FAC3700AB956E /* BodyView.swift in Sources */,
+				90763AD8280FAD5F00AB956E /* FooterView.swift in Sources */,
 				90763AD4280FABE800AB956E /* HeroView.swift in Sources */,
 				90763ABF280FA8C400AB956E /* IntroSectionWithDropdownNavigationApp.swift in Sources */,
 			);

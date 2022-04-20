@@ -15,6 +15,7 @@ struct ContentView: View {
                 HeaderView()
                 HeroView()
                 BodyView()
+                FooterView()
             }
         }
     }
