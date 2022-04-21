@@ -12,7 +12,7 @@ struct MenuItemView: View {
     let text: String
     let submenuItems: [SubmenuItem]
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Button {
                     withAnimation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: .zero)) {
@@ -30,9 +30,11 @@ struct MenuItemView: View {
                     }
                 }
             }
-            VStack {
-                ForEach(submenuItems, id: \.self) { submenuItem in
-                    SubmenuItemView(item: submenuItem)
+            if isExpanded {
+                VStack(alignment: .leading, spacing: .zero) {
+                    ForEach(submenuItems, id: \.self) { submenuItem in
+                        SubmenuItemView(item: submenuItem)
+                    }
                 }
             }
         }

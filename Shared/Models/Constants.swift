@@ -9,6 +9,7 @@ import Foundation
 
 enum Constants {
     enum General {
+        static public let narrowPadding = 12.0
         static public let regularPadding = 16.0
         static public let semiwidePadding = 24.0
         static public let widePadding = 36.0

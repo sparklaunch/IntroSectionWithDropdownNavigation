@@ -10,18 +10,22 @@ import SwiftUI
 struct SubmenuItemView: View {
     let item: SubmenuItem
     var body: some View {
-        HStack(spacing: Constants.General.regularPadding) {
-            if let icon = item.icon {
-                Image(decorative: icon)
-                    .resizable()
-                    .frame(width: 24, height: 24)
+        Button {
+            // TODO: SUBMENU ITEM LINK.
+        } label: {
+            HStack(spacing: Constants.General.regularPadding) {
+                if let icon = item.icon {
+                    Image(decorative: icon)
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                }
+                Text(item.text)
+                    .font(.body)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("BodyColor"))
             }
-            Text(item.text)
-                .font(.title3)
-                .fontWeight(.bold)
-                .foregroundColor(Color("BodyColor"))
+            .padding(Constants.General.narrowPadding)
         }
-        .padding()
     }
 }
 
