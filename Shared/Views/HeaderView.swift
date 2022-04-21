@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @Binding var isMenuVisible: Bool
     var body: some View {
         HStack {
             Image("Logo")
@@ -15,7 +16,9 @@ struct HeaderView: View {
                 .frame(width: 84, height: 27)
             Spacer()
             Button {
-                // TODO: HAMBURGER MENU.
+                withAnimation(.default) {
+                    isMenuVisible = true
+                }
             } label: {
                 Image("Menu")
                     .resizable()
@@ -29,7 +32,7 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        HeaderView(isMenuVisible: .constant(false))
             .previewLayout(.sizeThatFits)
     }
 }

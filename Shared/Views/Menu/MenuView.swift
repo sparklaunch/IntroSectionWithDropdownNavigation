@@ -8,33 +8,33 @@
 import SwiftUI
 
 struct MenuView: View {
+    @Binding var isMenuVisible: Bool
     var body: some View {
-        ZStack {
-            Color.white
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(role: .cancel) {
-                        // TODO: CLOSE MENU.
-                    } label: {
-                        Image("CloseMenu")
-                            .resizable()
-                            .frame(width: 32, height: 32)
+        ZStack(alignment: .trailing) {
+            Color.black.opacity(0.5)
+            ZStack(alignment: .top) {
+                Color.white
+                    .shadow(radius: Constants.General.shadowRadius)
+                VStack(alignment: .leading, spacing: Constants.General.semiwidePadding) {
+                    CloseMenuView(isMenuVisible: $isMenuVisible)
+                    VStack(alignment: .leading, spacing: Constants.General.semiwidePadding) {
+                        MenuItemView(text: "Features")
+                        MenuItemView(text: "Company")
+                        MenuItemView(text: "Careers")
+                        MenuItemView(text: "About")
                     }
                 }
-                VStack {
-                    
-                }
+                .padding(Constants.General.semiwidePadding)
+                .padding(.top, Constants.General.widePadding)
             }
+            .frame(width: 320)
         }
-        .padding(Constants.General.semiwidePadding)
-        .fixedSize(horizontal: false, vertical: true)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
-            .previewLayout(.sizeThatFits)
+        MenuView(isMenuVisible: .constant(true))
     }
 }

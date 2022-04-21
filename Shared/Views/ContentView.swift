@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isMenuVisible: Bool = false
     var body: some View {
         ZStack {
-            Color.white
-                .edgesIgnoringSafeArea(.all)
-            ScrollView {
-                LazyVStack(spacing: .zero) {
-                    HeaderView()
-                    HeroView()
-                    BodyView()
-                    FooterView()
+            ZStack {
+                Color.white
+                    .edgesIgnoringSafeArea(.all)
+                ScrollView {
+                    LazyVStack(spacing: .zero) {
+                        HeaderView(isMenuVisible: $isMenuVisible)
+                        HeroView()
+                        BodyView()
+                        FooterView()
+                    }
                 }
             }
+            MenuView(isMenuVisible: $isMenuVisible)
+                .opacity(isMenuVisible ? 1 : .zero)
         }
     }
 }

@@ -19,6 +19,8 @@
 		90763AD8280FAD5F00AB956E /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD7280FAD5F00AB956E /* FooterView.swift */; };
 		90763ADA280FB0AE00AB956E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AD9280FB0AE00AB956E /* Constants.swift */; };
 		90763ADD280FB23A00AB956E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763ADC280FB23A00AB956E /* MenuView.swift */; };
+		90763ADF2810DDE500AB956E /* CloseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763ADE2810DDE500AB956E /* CloseMenuView.swift */; };
+		90763AE12810DE4000AB956E /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AE02810DE4000AB956E /* MenuItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		90763AD7280FAD5F00AB956E /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		90763AD9280FB0AE00AB956E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		90763ADC280FB23A00AB956E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		90763ADE2810DDE500AB956E /* CloseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseMenuView.swift; sourceTree = "<group>"; };
+		90763AE02810DE4000AB956E /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				90763ADC280FB23A00AB956E /* MenuView.swift */,
+				90763ADE2810DDE500AB956E /* CloseMenuView.swift */,
+				90763AE02810DE4000AB956E /* MenuItemView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -230,7 +236,9 @@
 				90763ADD280FB23A00AB956E /* MenuView.swift in Sources */,
 				90763AD2280FAB1700AB956E /* HeaderView.swift in Sources */,
 				90763AD6280FAC3700AB956E /* BodyView.swift in Sources */,
+				90763AE12810DE4000AB956E /* MenuItemView.swift in Sources */,
 				90763AD8280FAD5F00AB956E /* FooterView.swift in Sources */,
+				90763ADF2810DDE500AB956E /* CloseMenuView.swift in Sources */,
 				90763ADA280FB0AE00AB956E /* Constants.swift in Sources */,
 				90763AD4280FABE800AB956E /* HeroView.swift in Sources */,
 				90763ABF280FA8C400AB956E /* IntroSectionWithDropdownNavigationApp.swift in Sources */,
