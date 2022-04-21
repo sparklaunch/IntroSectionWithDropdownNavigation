@@ -24,9 +24,11 @@ struct MenuItemView: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                         .foregroundColor(Color("BodyColor"))
-                        Image(decorative: "DownArrow")
-                            .resizable()
-                            .frame(width: 10, height: 6)
+                        if !submenuItems.isEmpty {
+                            Image(decorative: isExpanded ? "UpArrow" : "DownArrow")
+                                .resizable()
+                                .frame(width: 10, height: 6)
+                        }
                     }
                 }
             }

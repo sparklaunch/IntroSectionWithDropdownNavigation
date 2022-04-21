@@ -10,12 +10,8 @@ import Foundation
 struct SubmenuItem: Hashable {
     let icon: String?
     let text: String
-    init(icon: String, text: String) {
+    init(icon: String? = nil, text: String) {
         self.icon = icon
-        self.text = text
-    }
-    init(text: String) {
-        self.icon = nil
         self.text = text
     }
 }
