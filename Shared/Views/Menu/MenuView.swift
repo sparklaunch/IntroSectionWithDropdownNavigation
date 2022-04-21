@@ -10,8 +10,8 @@ import SwiftUI
 struct MenuView: View {
     @Binding var isMenuVisible: Bool
     var body: some View {
-        ZStack(alignment: .trailing) {
-            Color.black.opacity(0.5)
+        HStack {
+            Spacer()
             ZStack(alignment: .top) {
                 Color.white
                     .shadow(radius: Constants.General.shadowRadius)
@@ -28,8 +28,8 @@ struct MenuView: View {
                 .padding(.top, Constants.General.widePadding)
             }
             .frame(width: 320)
-        }
         .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 

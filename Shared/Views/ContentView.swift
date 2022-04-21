@@ -23,6 +23,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .blur(radius: isMenuVisible ? 3 : .zero)
             MenuView(isMenuVisible: $isMenuVisible)
                 .opacity(isMenuVisible ? 1 : .zero)
         }
