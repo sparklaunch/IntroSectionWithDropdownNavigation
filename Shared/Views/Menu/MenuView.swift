@@ -18,10 +18,10 @@ struct MenuView: View {
                 VStack(alignment: .leading, spacing: Constants.General.semiwidePadding) {
                     CloseMenuView(isMenuVisible: $isMenuVisible)
                     VStack(alignment: .leading, spacing: Constants.General.semiwidePadding) {
-                        MenuItemView(text: "Features")
-                        MenuItemView(text: "Company")
-                        MenuItemView(text: "Careers")
-                        MenuItemView(text: "About")
+                        MenuItemView(text: "Features", submenuItems: [SubmenuItem(icon: "Todo", text: "Todo List"), SubmenuItem(icon: "Calendar", text: "Calendar"), SubmenuItem(icon: "Reminders", text: "Reminders"), SubmenuItem(icon: "Planning", text: "Planning")])
+                        MenuItemView(text: "Company", submenuItems: [SubmenuItem(text: "History"), SubmenuItem(text: "Our Team"), SubmenuItem(text: "Blog")])
+                        MenuItemView(text: "Careers", submenuItems: [])
+                        MenuItemView(text: "About", submenuItems: [])
                     }
                 }
                 .padding(Constants.General.semiwidePadding)

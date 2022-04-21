@@ -22,6 +22,7 @@
 		90763ADF2810DDE500AB956E /* CloseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763ADE2810DDE500AB956E /* CloseMenuView.swift */; };
 		90763AE12810DE4000AB956E /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AE02810DE4000AB956E /* MenuItemView.swift */; };
 		90763AE32810E98300AB956E /* SubmenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AE22810E98300AB956E /* SubmenuItemView.swift */; };
+		90763AE52810ECB800AB956E /* SubmenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90763AE42810ECB800AB956E /* SubmenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		90763ADE2810DDE500AB956E /* CloseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseMenuView.swift; sourceTree = "<group>"; };
 		90763AE02810DE4000AB956E /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		90763AE22810E98300AB956E /* SubmenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmenuItemView.swift; sourceTree = "<group>"; };
+		90763AE42810ECB800AB956E /* SubmenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				90763AD9280FB0AE00AB956E /* Constants.swift */,
+				90763AE42810ECB800AB956E /* SubmenuItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				90763AC1280FA8C400AB956E /* ContentView.swift in Sources */,
 				90763ADD280FB23A00AB956E /* MenuView.swift in Sources */,
+				90763AE52810ECB800AB956E /* SubmenuItem.swift in Sources */,
 				90763AD2280FAB1700AB956E /* HeaderView.swift in Sources */,
 				90763AD6280FAC3700AB956E /* BodyView.swift in Sources */,
 				90763AE12810DE4000AB956E /* MenuItemView.swift in Sources */,

@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct SubmenuItemView: View {
-    let icon: String
-    let text: String
+    let item: SubmenuItem
     var body: some View {
         HStack(spacing: Constants.General.regularPadding) {
-            Image(decorative: icon)
-                .resizable()
-                .frame(width: 24, height: 24)
-            Text(text)
+            if let icon = item.icon {
+                Image(decorative: icon)
+                    .resizable()
+                    .frame(width: 24, height: 24)
+            }
+            Text(item.text)
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(Color("BodyColor"))
@@ -26,7 +27,7 @@ struct SubmenuItemView: View {
 
 struct SubmenuItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SubmenuItemView(icon: "Todo", text: "Todo List")
+        SubmenuItemView(item: SubmenuItem(icon: "Todo", text: "Todo List"))
             .previewLayout(.sizeThatFits)
     }
 }
