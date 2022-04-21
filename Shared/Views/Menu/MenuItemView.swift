@@ -23,7 +23,7 @@ struct MenuItemView: View {
                         Text(text)
                             .font(.title3)
                             .fontWeight(.semibold)
-                        .foregroundColor(Color("BodyColor"))
+                            .foregroundColor(Color("BodyColor"))
                         if !submenuItems.isEmpty {
                             Image(decorative: isExpanded ? "UpArrow" : "DownArrow")
                                 .resizable()

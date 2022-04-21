@@ -28,7 +28,7 @@ struct MenuView: View {
                 .padding(.top, Constants.General.widePadding)
             }
             .frame(width: 320)
-        .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }
